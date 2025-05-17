@@ -75,9 +75,9 @@ CREATE TABLE Compromissos (
 GO
 
 # Como Rodar?:
--Abra o SQL Server Management Studio e execute o script acima para criar o banco e tabelas.
--No Visual Studio 2022 (ou 2019), abra a solução AgendaApp.sln.
--Ajuste a connection string em Data/Database.cs se necessário (instância LocalDB ou nome do servidor).
+- Abra o SQL Server Management Studio e execute o script acima para criar o banco e tabelas.
+- No Visual Studio 2022 (ou 2019), abra a solução AgendaApp.sln.
+- Ajuste a connection string em Data/Database.cs se necessário (instância LocalDB ou nome do servidor).
 -IMPORTANTE!!! Restaure pacotes NuGet: Dapper e System.Data.SqlClient.
 -Compile e execute o projeto. A tela de login aparecerá.
 -Use Cadastrar-se para criar seu usuário e, em seguida, faça login.

@@ -10,34 +10,8 @@
 - Logout e retorno à tela de login
 
 # Estrutura do Projeto:
-AgendaApp.sln
-.gitignore
-README.md
-/
-└── AgendaApp
-    ├── Data
-    │   ├── Database.cs
-    │   ├── UsuarioRepository.cs
-    │   └── CompromissoRepository.cs
-    ├── Models
-    │   ├── Usuario.cs
-    │   └── Compromisso.cs
-    ├── Services
-    │   └── AuthService.cs
-    ├── Forms
-    │   ├── LoginForm.cs
-    │   ├── LoginForm.Designer.cs
-    │   ├── RegisterForm.cs
-    │   ├── RegisterForm.Designer.cs
-    │   ├── MainForm.cs
-    │   ├── MainForm.Designer.cs
-    │   ├── CompromissoForm.cs
-    │   └── CompromissoForm.Designer.cs
-    ├── Properties
-    │   ├── AssemblyInfo.cs
-    │   ├── Resources.resx
-    │   └── Settings.settings
-    └── Program.cs 
+
+![image](https://github.com/user-attachments/assets/4310b607-ce6f-41c9-9000-12adf120959d)
 
 # Banco de Dados:
 - Nome: AgendaDB

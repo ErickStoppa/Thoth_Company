@@ -1,13 +1,13 @@
 # AgendaApp
 
 # Descrição
--Mini documentação da aplicação AgendaApp, um sistema de gerenciamento de compromissos com controle de acesso por usuário, desenvolvido em C# Windows Forms (.NET Framework 4.7.2) e SQL Server.
+- Mini documentação da aplicação AgendaApp, um sistema de gerenciamento de compromissos com controle de acesso por usuário, desenvolvido em C# Windows Forms (.NET Framework 4.7.2) e SQL Server.
 
 # Funcionalidades:
--Cadastro e autenticação de usuários
--CRUD de compromissos (Criar, Ler, Atualizar, Excluir)
--Acesso restrito: cada usuário vê apenas seus compromissos
--Logout e retorno à tela de login
+- Cadastro e autenticação de usuários
+- CRUD de compromissos (Criar, Ler, Atualizar, Excluir)
+- Acesso restrito: cada usuário vê apenas seus compromissos
+- Logout e retorno à tela de login
 
 # Estrutura do Projeto:
 /AgendaApp.sln
@@ -39,7 +39,7 @@
   Program.cs              
 
 # Banco de Dados:
--Nome: AgendaDB
+- Nome: AgendaDB
 
 # Criação e tabelas:
 -- 1) Cria o banco (se ainda não existir):
@@ -78,11 +78,11 @@ GO
 - Abra o SQL Server Management Studio e execute o script acima para criar o banco e tabelas.
 - No Visual Studio 2022 (ou 2019), abra a solução AgendaApp.sln.
 - Ajuste a connection string em Data/Database.cs se necessário (instância LocalDB ou nome do servidor).
--IMPORTANTE!!! Restaure pacotes NuGet: Dapper e System.Data.SqlClient.
--Compile e execute o projeto. A tela de login aparecerá.
--Use Cadastrar-se para criar seu usuário e, em seguida, faça login.
--No MainForm, gerencie seus compromissos com os botões Novo, Editar, Excluir e faça Logout para voltar ao login.
+- IMPORTANTE!!! Restaure pacotes NuGet: Dapper e System.Data.SqlClient.
+- Compile e execute o projeto. A tela de login aparecerá.
+- Use Cadastrar-se para criar seu usuário e, em seguida, faça login.
+- No MainForm, gerencie seus compromissos com os botões Novo, Editar, Excluir e faça Logout para voltar ao login.
 
 # Observações:
--Senhas são armazenadas com salt e hash via PBKDF2 para maior segurança.
--Cada usuário só vê seus próprios compromissos graças ao filtro por UsuarioId.
+- Senhas são armazenadas com salt e hash via PBKDF2 para maior segurança.
+- Cada usuário só vê seus próprios compromissos graças ao filtro por UsuarioId.

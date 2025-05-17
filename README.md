@@ -1,6 +1,6 @@
 AgendaApp
 
-Descrição
+# Descrição
 -Mini documentação da aplicação AgendaApp, um sistema de gerenciamento de compromissos com controle de acesso por usuário, desenvolvido em C# Windows Forms (.NET Framework 4.7.2) e SQL Server.
 
 Funcionalidades:

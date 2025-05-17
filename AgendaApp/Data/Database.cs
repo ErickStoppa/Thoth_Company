@@ -5,14 +5,8 @@ namespace AgendaApp.Data
 {
     public static class Database
     {
-        // Se você usou LocalDB:
         private const string ConnString =
-            "Server=(localdb)\\MSSQLLocalDB;Database=AgendaDB;Trusted_Connection=True;";
-
-        // Ou se estiver usando sua instância nomeada:
-        // private const string ConnString =
-        //     "Server=ERICK-PC\\SQLEXPRESS;Database=AgendaDB;User Id=sa;Password=SuaSenha;";
-
+            "Server=ERICK-PC;Database=AgendaDB;User Id=sa;Password=Teste123;";
         public static IDbConnection GetConnection()
             => new SqlConnection(ConnString);
     }

@@ -1,22 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using AgendaApp.Forms;
 
 namespace AgendaApp
 {
-    internal static class Program
+    static class Program
     {
-        /// <summary>
-        /// Ponto de entrada principal para o aplicativo.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            while (true)
+            {
+                using (var loginForm = new LoginForm())
+                {
+                    var result = loginForm.ShowDialog();
+                    if (result != DialogResult.OK)
+                        break;
+
+                    var usuario = loginForm.UsuarioLogado;
+                    using (var mainForm = new MainForm(usuario))
+                    {
+                        mainForm.ShowDialog();
+                        if (!mainForm.Logout)
+                            break;
+                    }
+                }
+            }
         }
     }
 }

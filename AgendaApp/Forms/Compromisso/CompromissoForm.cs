@@ -29,6 +29,13 @@ namespace AgendaApp.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            // Validação dos campos obrigatórios
+            if (string.IsNullOrWhiteSpace(txtTitulo.Text) || string.IsNullOrWhiteSpace(txtDescricao.Text))
+            {
+                MessageBox.Show("Título e descrição são obrigatórios.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (_compromisso == null)
             {
                 var novo = new Compromisso
